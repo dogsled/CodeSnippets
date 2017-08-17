@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosDelegate-webView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - ************** UIWebview Delegate **************
+/** start */
+-(void)webViewDidStartLoad:(UIWebView *)webView {
+    
+}
+
+/** start loading */
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    return YES;
+}
+
+/** finish */
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+}
+
+/** error */
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D5766B11-183F-47E7-996C-171D344BD8B7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosDelegate-webView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosDelegate-webView 代理方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

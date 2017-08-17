@@ -3,19 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>yosWarning</string>
+	<string>yosLzTableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#warning TODO &lt;#message#&gt;</string>
+	<string>-(UITableView *)&lt;#tableView#&gt; {
+    if (!&lt;#_tableView#&gt;) {
+        &lt;#_tableView#&gt; = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        &lt;#_tableView#&gt;.delegate = self;
+        &lt;#_tableView#&gt;.dataSource = self;
+    }
+    return &lt;#_tableView#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>yosWarning</string>
+	<string>08E02FD5-9ABD-4651-BFBD-9BCC028D1985</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosLzTableView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>yosWarning todo-待办事宜</string>
+	<string>yosLzTableView-列表懒加载</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

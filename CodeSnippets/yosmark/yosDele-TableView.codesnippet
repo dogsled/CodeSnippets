@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosDelegate-TableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - ************** UITableView Delegate &amp;Datasource **************
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#expression#&gt;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return &lt;#expression#&gt;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identify = @"cellIdentify";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identify];
+    }
+//    cell.textLabel.text = self.arrayTitle[indexPath.row];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D6092A75-1CE6-4A33-8948-3E1588BC960A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosDelegate-TableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosDelegate-TableView-代理和数据源</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

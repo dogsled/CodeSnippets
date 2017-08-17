@@ -45,7 +45,7 @@
 
 #pragma mark - ************** Public Method **************
 
-#pragma mark - ************** UITableView Delegate &amp;Datasource **************
+//#pragma mark - ************** UITableView Delegate &amp;Datasource **************
 
 #pragma mark - ************** Other Delegate **************</string>
 	<key>IDECodeSnippetIdentifier</key>
