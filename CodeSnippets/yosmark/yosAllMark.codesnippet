@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosAllMark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - ************** Life Cycle **************
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initUI];
+    [self loadData];
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - ************** Initial Methods **************
+
+/** 视图初始化 */
+- (void)initUI {
+    
+    
+}
+
+/** 加载数据 */
+- (void)loadData {
+    
+    
+}
+#pragma mark - ************** Setter &amp; Getter **************
+/** 懒加载 */
+#pragma mark - ************** Target Mehtods **************
+/** Actions */
+
+#pragma mark - ************** Notification Method **************
+
+#pragma mark - ************** Private Method **************
+
+#pragma mark - ************** Public Method **************
+
+#pragma mark - ************** UITableView Delegate &amp;Datasource **************
+
+#pragma mark - ************** Other Delegate **************</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3B5329FF-77F0-460C-83BD-319744EB1F81</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>allMark-初始化所有mark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
