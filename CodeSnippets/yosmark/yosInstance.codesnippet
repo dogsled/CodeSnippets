@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosInstance</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static id instance_ = nil;
++ (instancetype)sharedInstance{
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        instance_ = [[self alloc] init];
+    });
+    return instance_;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        instance_ = [super allocWithZone:zone];
+    });
+    return instance_;
+}
+
+- (id)copyWithZone:(NSZone *)zone{
+    return instance_;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D27FCB03-EE77-4CBA-8E46-462DA0E73884</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosInstance</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosInstance-单利模式</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
