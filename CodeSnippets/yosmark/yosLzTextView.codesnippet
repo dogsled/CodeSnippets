@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosLzTextView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UITextView*)&lt;#textView#&gt;
+{
+    if(!&lt;#_textView#&gt;)
+    {
+        // 初始化输入框并设置位置和大小
+        &lt;#_textView#&gt; = [[UITextView alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+        // 设置预设文本
+        &lt;#_textView#&gt;.text = @"您的意见是我们前进的最大动力，谢谢！";
+        // 设置文本字体
+        &lt;#_textView#&gt;.font = [UIFont fontWithName:@"Arial" size:16.5f];
+        // 设置文本颜色
+        &lt;#_textView#&gt;.textColor = [UIColor redColor];
+        // 设置文本框背景颜色
+        &lt;#_textView#&gt;.backgroundColor = [UIColor whiteColor];
+        // 设置文本对齐方式
+        &lt;#_textView#&gt;.textAlignment = NSTextAlignmentLeft;
+        // 设置自动纠错方式
+        &lt;#_textView#&gt;.autocorrectionType = UITextAutocorrectionTypeNo;
+        //外框
+        &lt;#_textView#&gt;.layer.borderColor = [UIColor redColor].CGColor;
+        &lt;#_textView#&gt;.layer.borderWidth = 1;
+        &lt;#_textView#&gt;.layer.cornerRadius =5;
+        // 设置自动大写方式
+        &lt;#_textView#&gt;.autocapitalizationType = UITextAutocapitalizationTypeNone;
+        
+        // 设置键盘的样式
+        &lt;#_textView#&gt;.keyboardType = UIKeyboardTypeDefault;
+        // 设置return键样式
+        &lt;#_textView#&gt;.returnKeyType = UIReturnKeyDefault;
+        // 设置是否可以拖动
+        &lt;#_textView#&gt;.scrollEnabled = YES;
+        // 设置代理
+        &lt;#_textView#&gt;.delegate = self;
+        //自适应高度
+        &lt;#_textView#&gt;.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    }
+    return &lt;#_textView#&gt;;
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7D5F5F53-4A71-48A1-A20E-254A1265BF7D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosLzTextView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosLzTextView-(UITextView*)&lt;#textView#&gt;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

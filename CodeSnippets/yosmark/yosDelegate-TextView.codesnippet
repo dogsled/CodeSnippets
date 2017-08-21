@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosDelegate-TextView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 将要开始编辑
+ @return BOOL
+ */
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    return YES;
+    
+}
+/**
+ 开始编辑
+ @param textView textView
+ */
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@"您的意见是我们前进的最大动力，谢谢！"]) {
+        
+        textView.text = @"";
+        
+    }
+}
+
+/**
+ 将要结束编辑
+ @return BOOL
+ */
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+    
+    return YES;
+    
+}
+
+/**
+ 结束编辑
+ */
+-(void)textViewDidEndEditing:(UITextView *)textView
+{
+    if (textView.text.length &lt;1) {
+        textView.text = @"您的意见是我们前进的最大动力，谢谢！";
+    }
+    
+    
+}
+
+
+/**
+ 内容将要发生改变编辑 限制输入文本长度 监听TextView 点击了ReturnKey 按钮
+ @param textView textView
+ @param range    范围
+ @param text     text
+ @return BOOL
+ */
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if (range.location &lt; 100)
+    {
+        return  YES;
+        
+    } else  if ([textView.text isEqualToString:@"\n"]) {
+        
+        //这里写按了ReturnKey 按钮后的代码
+        return NO;
+    }
+    
+    if (textView.text.length == 100) {
+        
+        return NO;
+    }
+    
+    return YES;
+    
+}
+
+
+/**
+ 内容发生改变编辑 自定义文本框placeholder
+ 有时候我们要控件自适应输入的文本的内容的高度，只要在textViewDidChange的代理方法中加入调整控件大小的代理即可
+ @param textView textView
+ */
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [NSString stringWithFormat:@"%lu/100", textView.text.length];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2AD832D4-515D-4054-9FFF-46118C4D593B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosDelegate-TextView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosDelegate-TextView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
