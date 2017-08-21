@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosLzButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UIButton *)&lt;#button#&gt;
+{
+    if (!&lt;#_button#&gt;) {
+//        _button = [UIButton buttonWithType:UIButtonTypeRoundedRect]; //绘制形状
+        &lt;#_button#&gt; = [[UIButton alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+        // 设置标题
+        [&lt;#_button#&gt; setTitle:&lt;#title#&gt; forState:UIControlStateNormal];
+    
+        [&lt;#_button#&gt; setBackgroundImage:[UIImage imageNamed:@"bus.png"] forState:UIControlStateNormal];
+        [&lt;#_button#&gt; setBackgroundImage:[UIImage imageNamed:@"plane.png"] forState:UIControlStateHighlighted];
+        
+        // 设置事件
+        [&lt;#_button#&gt; addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
+        
+        // 设置背景色和透明度
+        [&lt;#_button#&gt; setBackgroundColor:[UIColor blackColor]];
+        [&lt;#_button#&gt; setAlpha:0.8];
+        
+        // 或设置背景色和透明度
+        &lt;#_button#&gt;.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    }
+    return &lt;#_button#&gt;;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>37702E81-1D15-4898-B010-863B81C78E3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>-(UIButton *)&lt;#button#&gt;</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosLsButton -(UIButton *)&lt;#button#&gt;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosLzLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UILabel *)&lt;#label#&gt;
+{
+    if (!&lt;#_label#&gt;) {
+        &lt;#_label#&gt; = [[UILabel alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+        &lt;#_label#&gt;.adjustsFontSizeToFitWidth = YES;
+        &lt;#_label#&gt;.text = @&lt;#text#&gt;;
+    }
+
+    return &lt;#_label#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6E1C54BB-8E23-4B58-B354-879403275A2F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>-(UILabel *)&lt;#label#&gt;
+-(UILabel *)&lt;#label#&gt;
+</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosLzLabel--(UILabel *)&lt;#label#&gt;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

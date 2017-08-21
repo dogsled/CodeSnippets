@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yosLzTextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UITextField*)textField
+{
+    if (!&lt;#_textField#&gt;) {
+        &lt;#_textField#&gt; = [[UITextField alloc] initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+        &lt;#_textField#&gt;.borderStyle = UITextBorderStyleRoundedRect;
+        &lt;#_textField#&gt;.font = [UIFont systemFontOfSize:15];
+        &lt;#_textField#&gt;.placeholder = @&lt;#"enter text"#&gt;;
+        &lt;#_textField#&gt;.autocorrectionType = UITextAutocorrectionTypeNo;
+        &lt;#_textField#&gt;.keyboardType = UIKeyboardTypeDefault;
+        &lt;#_textField#&gt;.returnKeyType = UIReturnKeyDone;
+        &lt;#_textField#&gt;.clearButtonMode = UITextFieldViewModeWhileEditing;
+        &lt;#_textField#&gt;.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+        &lt;#_textField#&gt;.delegate = self;
+    }
+    return &lt;#_textField#&gt;;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2A758479-904F-49DB-B0C2-C73A70F3E859</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yosLzTextField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yosLzTextField-(UITextField*)textField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
